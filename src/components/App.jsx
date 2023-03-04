@@ -8,7 +8,7 @@ export const App = () => {
   const { items, isLoading, error } = useSelector(getTasks);
 
   useEffect(() => {
-    dispatch(fetchTasks);
+    dispatch(fetchTasks());
   }, [dispatch]);
   return (
     <div>
